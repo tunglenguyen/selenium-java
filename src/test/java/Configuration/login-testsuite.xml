@@ -1,0 +1,7 @@
+<suite name="test-plan">
+    <test name="login authenication">
+        <classes>
+            <class name="Testcase.logintest"/>
+        </classes>
+    </test>
+</suite>
