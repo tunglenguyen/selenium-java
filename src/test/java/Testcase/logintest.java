@@ -7,14 +7,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static Support.OpenBrowser.*;
+
 public class logintest {
      private  WebDriver driver;
 
     @BeforeClass
     void openBrowser(){
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/login");
+
+        Browser("chrome");
+
+        Visit("https://the-internet.herokuapp.com/login");
+        Maxiumpage();
     }
     @Test
     void tc01(){
